@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        white,
+        white,
+        white
+    );
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+h1 {
+    color: #a33b75;
+    font-size: 32px;
+}
+
+.kirby {
+    width: 200px;
+    max-width: 70vw;
+    height: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 8px 12px #c77ba566);
+}
+
+.contenedor p {
+    color: #8d4777;
+    font-size: 18px;
+}
+
+/* Botón */
+
+button {
+    border: none;
+    border-radius: 30px;
+    padding: 14px 40px;
+
+    background: linear-gradient(
+        135deg,
+        #ff69b4,
+        #d946a6
+    );
+
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow: 0 5px 15px #d946a655;
+
+    transition: box-shadow 0.2s;
+}
+
+/* Posición del botón que escapa */
+
+#abrirBtn {
+    position: fixed;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, -50%);
+
+    z-index: 10;
+}
